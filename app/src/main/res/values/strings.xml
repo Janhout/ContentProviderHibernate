@@ -63,5 +63,6 @@
 
     <string name="todos_subidos">Todos los imnuebles subidos</string>
     <string name="error_fichero">Error al subir fichero</string>
+    <string name="error_server">Comprobar conexión con el Servidor</string>
 
 </resources>

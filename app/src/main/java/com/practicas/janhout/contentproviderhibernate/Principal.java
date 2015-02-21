@@ -271,6 +271,12 @@ public class Principal extends Activity implements FragmentoLista.EscuchadorList
                     } catch (Exception e) {
                         id = -1;
                     }
+                }else{
+                    Principal.this.runOnUiThread(new Runnable() {
+                        public void run() {
+                            Toast.makeText(Principal.this, getString(R.string.error_server), Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
                 if(id > 0){
                     ContentValues valores;
